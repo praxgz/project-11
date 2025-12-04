@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Listing</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e8f0ff, #d4e1ff, #c0d0ff, #aabfff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            box-shadow: 0px 0px 20px #87a4ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #263b66;
+            background-color: #dfe7ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1f3d78;
+            background-color: #e6f0ff;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #2d4c7a;
+        }
+
+        .details {
+            border: 1px solid #999;
+            background-color: #f8f9ff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            border: 1px solid #888;
+            background-color: #fafafa;
+            padding: 15px;
+            margin: 15px 0;
+            overflow: auto;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            background-color: #f0f6ff;
+            border-color: #6e8bff;
+        }
+
+        .btn {
+            background-color: #2d4c7a;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1a2f5c;
+            transform: scale(1.05);
+        }
+
+        .img-fixed {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #aaa;
+            object-fit: cover;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .img-fixed:hover {
+            transform: scale(1.08);
+            border-color: #506eff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Real Estate Listing Website</h1>
+
+    <div class="details">
+        <p><b>Name:</b> Pragati Sagar</p>
+        <p><b>Branch:</b> B.Tech CSIT (1st Year)</p>
+        <p><b>Email:</b> pragati.25005145@kiet.edu</p>
+    </div>
+
+    <!-- Search Box -->
+    <h2>Search Property</h2>
+
+    <div class="box">
+        <input type="text" placeholder="Enter city or area" style="width: 90%; padding: 6px; margin-bottom: 10px;">
+        <select style="width: 90%; padding: 6px; margin-bottom: 10px;">
+            <option>Select Property Type</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Plot</option>
+        </select>
+        <select style="width: 90%; padding: 6px;">
+            <option>Select Budget</option>
+            <option>Below ₹20 Lac</option>
+            <option>₹20–50 Lac</option>
+            <option>₹50 Lac–1 Cr</option>
+        </select>
+        <br><br>
+        <button class="btn">Search</button>
+    </div>
+
+    <!-- Property Listings -->
+    <h2>Available Properties</h2>
+
+    <div class="box">
+        <img src="https://img.freepik.com/free-photo/beautiful-landscape-with-red-pin_23-2149721822.jpg?semt=ais_hybrid&w=740&q=80" class="img-fixed" alt="Flat Image">
+        <h3>2BHK Apartment - Raj Nagar Extension</h3>
+        <p><b>Price:</b> ₹42,00,000</p>
+        <p><b>Area:</b> 980 sq ft</p>
+        <p>Spacious flat with sunlight, parking, and a gated society.</p>
+        <button class="btn">Enquire</button>
+    </div>
+
+    <div class="box">
+        <img src="https://www.shutterstock.com/image-illustration/3d-illustration-newly-built-luxury-260nw-2066280914.jpg" class="img-fixed" alt="Villa Image">
+        <h3>3BHK Luxury Villa - Greater Noida</h3>
+        <p><b>Price:</b> ₹85,00,000</p>
+        <p><b>Area:</b> 1800 sq ft</p>
+        <p>Modern villa with garden, modular kitchen, and high security.</p>
+        <button class="btn">Enquire</button>
+    </div>
+
+    <div class="box">
+        <img src="https://housing-images.n7net.in/01c16c28/2286343c07268cbd11e909f821a9c078/v0/medium/residential_plot-for-sale-uttara-Bhubaneswar+-plot_view.jpg" class="img-fixed" alt="Plot Image">
+        <h3>Residential Plot - Meerut Road</h3>
+        <p><b>Price:</b> ₹25,00,000</p>
+        <p><b>Area:</b> 120 sq yard</p>
+        <p>Excellent location with upcoming residential projects nearby.</p>
+        <button class="btn">Enquire</button>
+    </div>
+
+    <!-- Inquiry Form -->
+    <h2>Property Inquiry Form</h2>
+
+    <div class="box">
+        <input type="text" placeholder="Your Name" style="width: 90%; padding: 6px; margin-bottom: 10px;">
+        <input type="email" placeholder="Your Email" style="width: 90%; padding: 6px; margin-bottom: 10px;">
+        <input type="text" placeholder="Phone Number" style="width: 90%; padding: 6px; margin-bottom: 10px;">
+        <textarea rows="4" placeholder="Your Message" style="width: 90%; padding: 6px;"></textarea>
+        <br><br>
+        <button class="btn">Submit Inquiry</button>
+    </div>
+
+</div>
+
+</body>
+</html>
